@@ -1,0 +1,84 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Drop Animation</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #87CEEB;
+        }
+        .drop {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 50px;
+            height: 50px;
+            background-color: rgba(0, 0, 255, 0.6);
+            border-radius: 50%;
+            animation: drop 2s infinite;
+        }
+        @keyframes drop {
+            0% {
+                transform: translate(-50%, 0) scale(1);
+            }
+            50% {
+                transform: translate(-50%, -200px) scale(1.2);
+            }
+            100% {
+                transform: translate(-50%, 0) scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="drop"></div>
+</body>
+</html>
+Here's a simple **HTML index page** (named `index.html`) that can serve as the starting point for a website:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Simple Program</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #333;
+    }
+    p {
+      color: #666;
+    }
+    a.button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 20px;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    a.button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to My Simple Program</h1>
+  <p>This is the index (home) page of the site.</p>
+  <a href="main.html" class="button">Go to Main Page</a>
+</body>
+</html>
+
